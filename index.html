@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container-left">
+
+        <div class="logo">
+            <img src="./images/" alt="">
+            <h1></h1>
+            <img src="./images/" alt="">
+        </div>
+
+        <div class="footer">
+
+            <!-- Image credit -->
+            <p>Image Credit</p>
+
+        </div>
+
+    </div>
+
+    <div class="container-right">
+
+        <div class="header">
+            <p></p>
+
+            <p></p>
+        </div>
+
+        <div class="sign-up">
+            <h1>Sign Up Now!</h1>
+
+            <form action="https://httpbin.org/post" method="post">
+
+                <div class="form-left">
+                    <ul>
+                        <li>
+                            <label for="firstName">First Name</label>
+                            <input class="validate" type="text" id="firstName" placeholder="John" name="first-name"
+                                required>
+                            <span class="firstName"></span>
+                        </li>
+
+                        <li>
+                            <label for="email">Email</label>
+                            <input class="validate" type="email" id="email" placeholder="username@example.com"
+                                name="email" required>
+                            <span class="email"></span>
+                        </li>
+
+                        <li>
+                            <label for="password">Password</label>
+                            <input class="validate" type="password" id="password" name="user_pwd" placeholder=" "
+                                required>
+                            <span class="password"></span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="form-right">
+                    <ul>
+                        <li>
+                            <label for="lastName">Last Name</label>
+                            <input class="validate" type="text" id="lastName" placeholder="Smith" name="last-name"
+                                required>
+                            <span class="lastName"></span>
+                        </li>
+
+                        <li>
+                            <label for="username">Username</label>
+                            <input class="validate" type="text" id="usernamer" placeholder=" "
+                                name="username" required>
+                            <span class="username"></span>
+                        </li>
+
+                        <li>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="user_confirm_pwd" placeholder=" "
+                                required>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+        <div class="create-login">
+
+            <button class="create button" type="button">Create Account</button>
+
+            <p>Already have an account? <button class="none login">Log In</button></p>
+
+        </div>
+
+
+    </div>
+
+    <!-- Welcome page upon creating account -->
+    <div class="modal" id="signed-up">
+
+        <h1 class="welcome"></h1>
+
+        <h1>Thank you for signing up!</h1>
+
+        <!-- Information link -->
+        <p></p>
+
+        <button class="close">✖</button>
+
+    </div>
+
+    <!-- Login page -->
+    <div class="modal" id="login">
+
+        <form action="https://httpbin.org/post" method="post">
+
+            <ul>
+                <li>
+                    <label for="userNameLogin">Username</label>
+                    <input class="validateLogin" type="text" id="userNameLogin" name="userNameLogin" placeholder=" " required>
+                    <span class="userNameLogin"></span>
+                </li>
+
+                <li>
+                    <label for="passwordLogin">Password</label>
+                    <input class="validateLogin" type="password" id="passwordLogin" name="passwordLogin" placeholder=" " required>
+                    <span class="passwordLogin"></span>
+                </li>
+
+            </ul>
+
+        </form>
+
+        <div>
+
+            <button class="button" type="button" id="loginButton">Log In</button>
+
+        </div>
+
+        <button class="close">✖</button>
+
+    </div>
+
+    <!-- Welcome page for returning users -->
+    <div class="modal" id="welcome-back">
+
+        <h1 class="welcome-back"></h1>
+
+        <!-- Information link -->
+        <p></p>
+
+        <button class="close">✖</button>
+
+    </div>
+
+</body>
+
+</html>
