@@ -49,6 +49,7 @@ body {
     /* Add background image to the left container */
     background-image: url(./images/grease-pole.jpg);
     background-repeat: no-repeat;
+    background-position: 35% 0%;
     background-size: cover;
 }
 
