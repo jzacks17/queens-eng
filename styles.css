@@ -295,6 +295,7 @@ form ul {
     top: 50%;
 
     background-color: var(--primary-colour);
+    color: var(--text-colour);
     border: 5px solid black;
     border-radius: 2px;
 
