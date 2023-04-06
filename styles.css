@@ -100,17 +100,20 @@ body {
     color: var(--text-colour);
 }
 
-.footer a:link {
+.footer a:link,
+.modal a:link {
     color: var(--text-colour);
 }
 
 /* visited link */
-.footer a:visited {
+.footer a:visited,
+.modal a:visited {
     color: var(--text-colour);
 }
 
 /* mouse over link */
-.footer a:hover {
+.footer a:hover,
+.modal a:hover {
     color: var(--third-colour);
 }
 
@@ -299,7 +302,7 @@ form ul {
     border: 5px solid black;
     border-radius: 2px;
 
-    padding: min(4Vw, 4Vh);
+    padding: min(8Vw, 8Vh);
 
     flex-direction: column;
     justify-content: space-around;
