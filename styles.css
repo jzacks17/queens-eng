@@ -90,12 +90,13 @@ body {
     top: 100%;
     left: 40%;
 
-    font-size: min(1.5Vw, 3Vh);
+    font-size: min(1Vw, 2Vh);
 
     text-align: center;
 }
 
 .footer p {
+    background-color: rgba(53, 0, 168, 0.8);
     color: var(--text-colour);
 }
 
@@ -110,7 +111,7 @@ body {
 
 /* mouse over link */
 .footer a:hover {
-    color: var(--primary-colour);
+    color: var(--third-colour);
 }
 
 
