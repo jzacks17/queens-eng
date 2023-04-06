@@ -47,7 +47,7 @@ body {
     height: 100%;
 
     /* Add background image to the left container */
-    background-image: url(./images/background.jpg);
+    background-image: url(./images/grease-pole.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: var(--primary-colour);
+    background-color: rgba(53, 0, 168, 0.8);
 
     padding: min(1rem, 3Vw);
 
