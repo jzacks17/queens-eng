@@ -1,0 +1,331 @@
+/* Change all box sizing to border box */
+* {
+    box-sizing: border-box;
+}
+
+/* CSS variables */
+:root {
+    --primary-colour: rgb(0, 128, 175);
+    --secondary-colour: #3b3b3b;
+    --text-colour:#d6d6d6;
+}
+
+@font-face {
+    font-family: 'space-time';
+    src: url(./fonts/spacetime-regular.ttf);
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* Add flex box to the entire body */
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--secondary-colour);
+
+    flex: auto;
+
+
+    position: absolute;
+    height: 100Vh;
+    width: 100Vw;
+
+    border: 1px solid black;
+
+    margin: 0;
+}
+
+.container-left {
+
+    position: relative;
+    width: 40%;
+    height: 100%;
+
+    /* Add background image to the left container */
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+
+    transform: translate(0%, -30%);
+    top: 30%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary-colour);
+
+    padding: min(1rem, 3Vw);
+
+}
+
+.logo h1 {
+    text-align: center;
+    font: min(3.5Vw, 3.5Vh) "space-time", monospace;
+    color: black;
+}
+
+.logo img {
+    width: min(3Vw, 3Vh);
+    height: auto;
+
+    margin: 0 min(1rem, 3Vw);
+}
+
+.footer {
+    position: absolute;
+    transform: translate(-40%, -100%);
+    top: 100%;
+    left: 40%;
+
+    font-size: min(1.5Vw, 3Vh);
+
+    text-align: center;
+}
+
+.footer p {
+    color: var(--text-colour);
+}
+
+.footer a:link {
+    color: var(--text-colour);
+}
+
+/* visited link */
+.footer a:visited {
+    color: var(--text-colour);
+}
+
+/* mouse over link */
+.footer a:hover {
+    color: var(--primary-colour);
+}
+
+
+.container-right{
+
+    position: relative;
+    width: 60%;
+    height: 100%;
+
+    background-color: var(--secondary-colour);
+    color: var(--text-colour);
+}
+
+.header{
+    padding: min(2rem, 10Vw, 10Vh);
+    font-size: min(1.5Vw, 3Vh);
+}
+
+.sign-up{
+    padding: min(1rem, 5Vw, 5Vh) min(2rem, 10Vw, 10Vh);
+    background-color: var(--primary-colour);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
+}
+.sign-up h1{
+    font-size: min(3Vw, 4Vh);
+}
+
+form{
+    
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li {
+    display: flex;
+    flex-direction: column;
+    margin: 3Vh 0em;
+    align-items: left;
+    justify-content: center;
+
+    position: relative;
+  }
+
+  .form-right li{
+    margin-left: 5Vw;
+  }
+
+
+  form label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 15Vw;
+    text-align: left;
+
+    color: var(--text-colour);
+  
+    font-size: 1.3Vw;
+  }
+  
+  form input,
+  form textarea {
+    /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+    font: min(1.3Vw, 2.5Vh) sans-serif;
+  
+    /* Uniform text field size */
+    width: 20Vw;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    outline: none;
+    border: 2px solid #999;
+  }
+
+  form input:placeholder-shown{
+    background-color: white !important;
+
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    /* Additional highlight for focused elements */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+ 
+  }
+  
+  .create-login{
+    padding: min(1rem, 5Vw, 5Vh) min(2rem, 10Vw, 10Vh);
+
+    font-size: min(1.5Vw, 3Vh)
+  }
+
+.button{
+    padding: min(0.5rem, 2.5Vw, 2.5Vh) min(1rem, 5Vw, 5Vh);
+    background-color: var(--primary-colour);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-colour);
+    border-radius: 0.5rem;
+
+    font-size: min(1.5Vw, 3Vh);
+
+}
+
+.button:hover{
+    background-color: #020222 !important;
+}
+
+  /* Remove all styling from button */
+  .none{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    color: var(--primary-colour);
+  }
+
+  .none:hover{
+    color:#020222;
+  }
+
+
+  /* Validation */
+  input.validate:focus:invalid,
+  input.validateLogin:focus:invalid,
+  .invalid:focus{
+    border: 2px solid #b92326;
+    background-color: white !important;
+
+  }
+
+  input.validate:focus:valid,
+  input.validateLogin:focus:valid,
+  .valid:focus{
+    border: 2px solid green;
+    background-color: white !important;
+  }
+
+  input.validate:invalid,
+  input.validateLogin:invalid,
+  .invalid{
+    background-color: rgb(255, 200, 201);
+
+  }
+
+  input.validate:valid,
+  input.validateLogin:valid,
+  .valid{
+    background-color: rgb(145, 198, 132);
+  }
+
+  span{
+    font-size:min(1Vw, 2Vh);
+    color: rgba(253, 0, 0, 0.866);
+    position: absolute;
+    top: 100%;
+  }
+
+
+.modal{
+    display: none;
+
+    position: absolute;
+
+    height:60%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    background-color: var(--primary-colour);
+    border: 5px solid black;
+    border-radius: 2px;
+
+    padding: min(4Vw, 4Vh);
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.modal .close{
+    position: absolute;
+
+    height: min(4Vw, 4Vh);
+    width: min(4Vw, 4Vh);
+    transform: translate(-98%, -2%);
+    left: 98%;
+    top: 2%;
+
+    font-size: min(2Vw, 2Vh);
+
+    background-color: var(--secondary-colour);
+
+    color: black;
+    
+    border-radius: 100%;
+    text-align: center;
+}
+
+div.login button.login{
+    background-color: var(--secondary-colourr) !important;
+}
+
+.modal .button{
+  background-color: var(--secondary-colour);
+}
