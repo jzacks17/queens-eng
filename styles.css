@@ -74,7 +74,7 @@ body {
 .logo h1 {
     text-align: center;
     font: min(3.5Vw, 3.5Vh) "space-time", monospace;
-    color: black;
+    color: var(--third-colour);
 }
 
 .logo img {
