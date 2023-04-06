@@ -265,7 +265,7 @@ form ul {
   input.validate:invalid,
   input.validateLogin:invalid,
   .invalid{
-    background-color: rgb(255, 200, 201);
+    background-color: rgb(225, 89, 92);
 
   }
 
