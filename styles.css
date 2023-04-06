@@ -126,7 +126,7 @@ body {
 }
 
 .header{
-    padding: min(2rem, 10Vw, 10Vh);
+    padding: min(1rem, 5Vw, 5Vh) min(2rem, 10Vw, 10Vh);
     font-size: min(1.5Vw, 3Vh);
 }
 
