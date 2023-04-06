@@ -5,8 +5,9 @@
 
 /* CSS variables */
 :root {
-    --primary-colour: rgb(0, 128, 175);
+    --primary-colour: rgb(53, 0, 168);
     --secondary-colour: #3b3b3b;
+    --third-colour: #ddca00;
     --text-colour:#d6d6d6;
 }
 
@@ -223,7 +224,8 @@ form ul {
 }
 
 .button:hover{
-    background-color: #020222 !important;
+    background-color: var(--third-colour) !important;
+    color: var(--primary-colour);
 }
 
   /* Remove all styling from button */
@@ -239,7 +241,7 @@ form ul {
   }
 
   .none:hover{
-    color:#020222;
+    color: var(--third-colour);
   }
 
 
